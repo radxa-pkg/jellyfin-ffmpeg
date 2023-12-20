@@ -1,0 +1,9 @@
+#!/bin/sh
+set -e
+
+case $1 in
+    install|upgrade)
+    dpkg-divert --package jellyfin-ffmpeg --divert "/usr/bin/ffmpeg.debian" --rename "/usr/bin/ffmpeg"
+esac
+
+exit 0

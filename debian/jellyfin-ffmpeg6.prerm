@@ -1,4 +1,7 @@
 #!/bin/sh
 
+update-alternatives --config ffmpeg
+update-alternatives --remove-all ffmpeg
+
 # Remove our transitional symlink
 rm -f /usr/share/jellyfin-ffmpeg

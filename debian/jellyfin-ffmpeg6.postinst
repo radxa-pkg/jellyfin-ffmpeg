@@ -1,5 +1,8 @@
 #!/bin/sh
 
+update-alternatives --install /usr/bin/ffmpeg ffmpeg /usr/lib/jellyfin-ffmpeg/ffmpeg 50
+update-alternatives --config ffmpeg
+
 # Symlink our old locations to the new locations
 # to aid in transitioning around the 10.3.0 release
 ln -s /usr/lib/jellyfin-ffmpeg /usr/share/jellyfin-ffmpeg
