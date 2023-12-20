@@ -196,3 +196,10 @@ $(sort $(OUTDIRS)):
 
 .PHONY: all all-yes alltools build check config testprogs
 .PHONY: *clean install* uninstall*
+
+#
+# Release
+#
+.PHONY: release
+release:
+	gh workflow run .github/workflows/new_version.yml
