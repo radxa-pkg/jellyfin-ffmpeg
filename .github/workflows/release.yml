@@ -19,7 +19,7 @@ jobs:
       - name: Build
         run: |
           sudo apt-get update
-          sudo apt-get install docker.io make mmv -y
+          sudo apt-get install make mmv -y
           ./build bullseye arm64 ../
       - name: Workaround actions/upload-artifact#176
         run: |
