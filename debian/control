@@ -51,6 +51,8 @@ Build-Depends:
  clang [!armhf !arm64],
 # --enable-opencl
  ocl-icd-opencl-dev,
+# --enable-libv4l2
+ libv4l-dev,
 # --enable-omx
 # libomxil-bellagio-dev
 # omx headers are fully included in raspberrypi/firmware.
