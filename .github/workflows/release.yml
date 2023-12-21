@@ -21,7 +21,7 @@ jobs:
 
           sudo apt-get update
           sudo apt-get install make mmv -y
-          make deb
+          make -f .github/Makefile deb
       - name: Workaround actions/upload-artifact#176
         run: |
           echo "artifacts_path=$(realpath ..)" >> $GITHUB_ENV

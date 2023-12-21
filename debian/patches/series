@@ -58,3 +58,8 @@
 0058-add-full-hwa-pipeline-for-rockchip-rk3588-platform.patch
 0059-add-checks-for-arm-mali-in-opencl-tonemap.patch
 0060-fix-libx265-encoded-fmp4-hls-playback-on-safari.patch
+0061-avdevice-v4l2-add-v4l2-multi-planar-API-support.patch
+0062-avdevice-v4l2-add-nv16-nv24-support.patch
+0063-avdevice-v4l2-add-option-to-ignore-input-error-ignor.patch
+0064-avdevice-v4l2-estimate-framerate-from-dv-timings-whe.patch
+0065-v4l2-use-always-channel-0-if-driver-does-not-return-.patch

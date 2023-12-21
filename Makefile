@@ -196,13 +196,3 @@ $(sort $(OUTDIRS)):
 
 .PHONY: all all-yes alltools build check config testprogs
 .PHONY: *clean install* uninstall*
-
-#
-# Release
-#
-.PHONY: deb
-deb: debian
-	./build bullseye arm64 ./
-.PHONY: release
-release:
-	gh workflow run .github/workflows/new_version.yml
