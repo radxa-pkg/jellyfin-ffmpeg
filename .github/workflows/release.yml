@@ -18,9 +18,10 @@ jobs:
           fetch-depth: 0
       - name: Build
         run: |
+
           sudo apt-get update
           sudo apt-get install make mmv -y
-          ./build bullseye arm64 ../
+          make deb
       - name: Workaround actions/upload-artifact#176
         run: |
           echo "artifacts_path=$(realpath ..)" >> $GITHUB_ENV

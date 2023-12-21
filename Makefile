@@ -200,6 +200,9 @@ $(sort $(OUTDIRS)):
 #
 # Release
 #
+.PHONY: deb
+deb: debian
+	./build bullseye arm64 ./
 .PHONY: release
 release:
 	gh workflow run .github/workflows/new_version.yml
