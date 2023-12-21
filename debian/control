@@ -90,8 +90,7 @@ Replaces: jellyfin-ffmpeg, jellyfin-ffmpeg5
 Conflicts: jellyfin-ffmpeg, jellyfin-ffmpeg5
 Depends:
  ${shlibs:Depends},
- ${misc:Depends}，
- libv4l-dev
+ ${misc:Depends}
 Description: Tools for transcoding, streaming and playing of multimedia files
  FFmpeg is the leading multimedia framework, able to decode, encode, transcode,
  mux, demux, stream, filter and play pretty much anything that humans and
